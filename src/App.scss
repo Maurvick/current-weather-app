@@ -1,0 +1,186 @@
+$textColor: rgb(255, 255, 255);
+// button, input
+$elementBackground: #ebfffc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.card {
+  max-width: 450px;
+  background: linear-gradient(135deg, #7a956b, #c3d223);
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  color: $textColor;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    border: 0;
+    outline: 0;
+    background: $elementBackground;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    border: 0;
+    outline: 0;
+    background: $elementBackground;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+}
+
+.weather {
+  h1 {
+    font-size: 45px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+}
+
+.weather__humidity::after {
+  display: inline-block;
+  margin-left: 10px;
+  // content: "humidity";
+}
+
+.weather__wind::after {
+  display: inline-block;
+  margin-left: 10px;
+  // content: "meter/sec";
+  // font-size: 10px;
+}
+
+.weather__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.weather__column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style The Dropdown Button */
+.drop-button {
+  background-color: #4caf50;
+  // color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .drop-button {
+  background-color: #000000;
+  color: white;
+}
+
+// .weather {
+//   background-color: #7a956b;
+//   border-radius: 10px;
+//   padding: 20px;
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+// }
+
+// .weather__search {
+// }
+
+// .weather__header {
+//   display: flex;
+// }
+
+// .weather__main {
+//   flex: 1 1 auto;
+// }
+
+// .weather__city {
+//   font-size: 40px;
+//   font-weight: 700;
+//   margin-bottom: 20px;
+// }
+
+// .weather__status {
+//   font-size: 20px;
+//   margin-bottom: 20px;
+// }
+
+// .weather__temp {
+//   font-size: 30px;
+//   font-weight: 700;
+//   margin-bottom: 10px;
+// }
+
+// .weather__humidity,
+// .weather__wind {
+//   font-size: 28px;
+//   margin-top: -6px;
+// }
